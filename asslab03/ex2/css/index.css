@@ -1,0 +1,36 @@
+body{
+    background-color: #f0f0f0;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+}
+
+h1{
+    color:rgb(0, 0, 0);
+    margin: 20px;
+}
+
+.main{
+    display: flex;
+    gap: 20px;
+    justify-content: space-around;
+    align-items: center;
+}
+
+button{
+    background-color: rgb(198, 139, 208);
+    border: none;
+    border-radius: 5px;
+    padding: 2px;
+    color: #000;
+    cursor: pointer;
+}
+
+#final{
+    display: flex;
+    border: 1px solid #f0f0f0;
+    border-radius: 25px;
+    background-color: rgb(198, 139, 208);
+    height: 80px;
+    width: 80px;
+    padding: 25px;
+    align-items: center;
+}

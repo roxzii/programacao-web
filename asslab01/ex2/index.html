@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="css/index.css">
+    </head>
+    <body>
+
+        <div class = "Header">
+            <div id="Text">
+                <h3>Formulário de Inscrição</h3>
+            </div>    
+        </div>
+
+        <form class="form">
+            Nome:
+            <input type="text" name="Nome" class="TextBox" placeholder=" "><br>
+            Distrito:
+            <select name="distrito" class="select">
+                <option value=" " selected> </option>
+                <option value="Aveiro">Aveiro</option>
+                <option value="Beja">Beja</option>
+                <option value="Braga">Braga</option>
+                <option value="Bragança">Bragança</option>
+                <option value="Castelo Branco">Castelo Branco</option>
+                <option value="Coimbra">Coimbra</option>
+                <option value="Evora">Évora</option>
+                <option value="Faro">Faro</option>
+                <option value="Guarda">Guarda</option>
+                <option value="Leiria">Leiria</option>
+                <option value="Lisboa">Lisboa</option>
+                <option value="Portalegre">Portalegre</option>
+                <option value="Porto">Porto</option>
+                <option value="Santarém">Santarém</option>
+                <option value="Setúbal">Setúbal</option>
+                <option value="Viana do Castelo">Viana do Castelo</option>
+                <option value="Vila Real">Vila Real</option>
+                <option value="Viseu">Viseu</option>
+            </select><br>
+            Género:
+            
+            <div class="Radio">
+                <input type="radio" name="selectGENDER" id="male">
+                <input type="radio" name="selectGENDER" id="female">
+                <input type="radio" name="selectGENDER" id="nonbinary">
+                <input type="radio" name="selectGENDER" id="noanswer">
+                  <label for="male" class="option male">
+                     <span>Masculino</span>
+                     </label>
+                  <label for="female" class="option female">
+                     <span>Feminino</span>
+                  </label>
+                  <label for="nonbinary" class="option nonbinary">
+                    <span>Não-Binário</span>
+                    </label>
+                 <label for="noanswer" class="option noanswer">
+                    <span>Não Respondo</span>
+                 </label>
+            </div><br>
+
+            Morada:<br>
+            <textarea name="Morada" id="TextMorada" cols="30" rows="10"></textarea> <br>
+            Código Postal:
+            <input type="text" id="postalCode4" placeholder="0000" maxlength="4" required minlength="4">
+            -
+            <input type="text" id="postalCode3" placeholder="000" maxlength="3" required minlength="3"> <br>
+            Data de Nascimento: <input type="date" id="DataNascimento"><br>
+            Curso:
+            <select name="Curso" class="select">
+                <option value=" " selected> </option>
+                
+                <option value="Engenharia_Informatica">Engenharia Informática</option>
+                <option value="Cinema">Cinema</option>
+                <option value="Solicitadoria">Ciências Farmacêuticas</option>
+                <option value="Engenharia_Civil">Engenharia Civil</option>
+                <option value="Engenharia_Aeroespacial">Engenharia Aeronáutica</option>
+                <option value="Engenharia_Mecanica">Engenharia Mecânica</option>
+                <option value="Design_Moda">Design de Moda</option>
+                <option value="Arquitetura">Arquitetura</option>
+                <option value="Marketing">Marketing</option>
+                <option value="Medecina">Medicina</option>
+                <option value="Matematica">Matemática</option>
+            </select>
+            &emsp;|  Regime de Ingresso:
+            <select name="Ingresso" class="select">
+                <option value=" " selected> </option>
+                <option value="Geral">Regime Geral</option>
+                <option value="Maiores23">Maiores de 23</option>
+                <option value="CET">Titulares de CET</option>
+                <option value="Transferencia">Transferência</option>
+                <option value="Mudanca_de_curso">Mudança de curso</option>
+                <option value="Zero">Ano zero</option>
+                <option value="Livre">Curso Livre</option>
+            </select>
+            &emsp;|  Primeira opção?
+            <div class="Radio">
+                <input type="radio" name="selectSN" id="sim">
+                <input type="radio" name="selectSN" id="nao">
+                  <label for="sim" class="option sim">
+                     <span>Sim</span>
+                     </label>
+                  <label for="nao" class="option nao">
+                     <span>Não</span>
+                  </label>
+            </div><br>
+            <input type="reset" name="BTNclean" value="Limpar">
+            &emsp;
+            <input type="submit" name="BTNsubmit" value="Submeter">
+        </form>
+        
+    </body>
+</html>

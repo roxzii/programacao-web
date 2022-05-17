@@ -1,0 +1,122 @@
+@charset "UTF-8";
+
+body{
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    overflow-x: hidden;
+    background-color: #ffffff;
+}
+
+.Header{
+    display: flex;
+    width: 92%;
+    height: 190px;
+    padding-left: 13%;
+    margin: -1%;
+}
+
+.Header #Text{
+    color: rgb(0, 0, 0);
+    font-size: 20px;
+}
+
+.form{
+    position: fixed;
+    width: 80%;
+    height: 50%;
+    line-height: 35px;
+    padding-left: 5%;
+    padding-bottom: 35px;
+    padding-top: 35px;
+    margin-left: 7%;
+    bottom: 25%;
+    border-radius: 10px;
+}
+
+.form input{
+    border-left: none;
+    border-right: none;
+    border-top: 3px;
+    border-color: #070707;
+}
+
+.form .select{
+    text-align: center;
+    border-left: none;
+    border-right: none;
+    border-top: 3px;
+    border-color: #070707;
+}
+
+input:focus::placeholder {
+    color: transparent;
+}
+
+.form #postalCode4{
+    text-align: center;
+    width: 32px;
+}
+
+.form #postalCode3{
+    text-align: center;
+    width: 22px;
+}
+
+.form .TextBox{
+
+    width: 300px;
+}
+
+.Radio{
+    display: inline-flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.Radio .option{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    border-radius: 5px;
+    cursor: pointer;
+    padding-left: 10px;
+    padding-right: 10px;
+    transition: all 0.3s ease;
+}
+  
+input[type="radio"]{
+    display: none;
+}
+
+#male:checked:checked ~ .male{
+    background: rgb(0, 119, 255);
+}
+  
+#female:checked:checked ~ .female{
+    background: rgb(0, 119, 255);
+}
+
+#nonbinary:checked:checked ~ .nonbinary{
+    background: rgb(0, 119, 255);
+}
+
+#noanswer:checked:checked ~ .noanswer{
+    background: rgb(0, 119, 255);
+}
+
+#sim:checked:checked ~ .sim,
+#nao:checked:checked ~ .nao{
+    background: rgb(0, 119, 255);
+}
+
+.Radio .option span{
+    font-size: 18px;
+    color: black;
+}
+#male:checked:checked ~ .male span,
+#female:checked:checked ~ .female span,
+#nonbinary:checked:checked ~ .nonbinary span,
+#noanswer:checked:checked ~ .noanswer span,
+#sim:checked:checked ~ .sim span,
+#nao:checked:checked ~ .nao span{
+    color: #fff;
+}
